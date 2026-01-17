@@ -62,7 +62,6 @@ function animatePress(currentColor) {
 }
 
 
-
 // Check the user's answer
 function checkAnswer(currentLevel) {
     if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
