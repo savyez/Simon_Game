@@ -51,6 +51,8 @@ function playSound(color) {
     audio.play();
 }
 
+
+// Animate button press
 function animatePress(currentColor) {
     $("#" + currentColor).addClass("pressed");
 
