@@ -3,6 +3,14 @@
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
+var level = 0;
+
+$("#level-title").text("Press A Key to Start");
+$(document).on("keydown", function() {
+    nextSequence();
+});
+
+
 
 $(".btn").click(function() {
 
@@ -23,6 +31,10 @@ function nextSequence() {
 
     $("#" + randomChosenColor).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor);
+
+
+    $("#level-title").text("Level " + level);
+    level++;
 }
 
 
